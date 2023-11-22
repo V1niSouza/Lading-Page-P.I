@@ -6,17 +6,10 @@
     <title>CyberLiveStock - Landing Page </title>
     <link rel="stylesheet" href="css/estilo.css">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-mI5f5zpO7B9uIfb6owK1uykBkI7GkUM8f5T7jiD5NVTD7P1NXcVJGA3gFJtcFq0X" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7be4d7d138.js"></script> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     
@@ -40,80 +33,164 @@
 
     <section class="carrosel">
 
-        <figure>
-            <img class="carrosel-img" src="https://picsum.photos/1460/900" alt="foto aleatoria" max-width="1460" max-height="900">
-        </figure>
+        <div style="width: 100%; height: 100%; ">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              </div>
+              
+              <!-- The slideshow/carousel --> 
+              <div class="carousel-inner" style="align-items: center;">
+                <div class="carousel-item active">
+                  <img src="imgs/bufalo-1-1280x720.jpg"class="img-fluid" style="width:100%; height: 90vh;  filter: grayscale(1); ">
+                  <div class="carousel-caption">
+                    <h3>IMAGEM 1</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/bufalo-1-1280x720.jpg" class="img-fluid" style="width:100%; height: 90vh; filter: grayscale(1);">
+                  <div class="carousel-caption">
+                    <h3>IMAGEM 2</h3>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/img2.jfif" class="img-fluid" style="width:100%; height: 90vh; filter: grayscale(1);">
+                  <div class="carousel-caption">
+                    <h3>IMGS 3</h3>
+                  </div>
+                </div>
+              </div>
+             
+              <!-- Left and right controls/icons -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            </div>
+            </div>
 
     </section>
 
-    <section class="conteiner">
+    <section class="conteiner" data-aos="fade-up">
 
-        <div><img class="imagem-grande" src="https://picsum.photos/800/900" alt=""></div>
-
-        <div class="columns">
-            <div class="column">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quod ipsum. Laborum itaque et, quisquam quis corporis dicta minus, quia beatae repudiandae qui ullam hic quidem atque eveniet voluptas cupiditate, reiciendis temporibus eligendi. Rerum, nostrum delectus! Ipsam pariatur nesciunt eius a possimus earum beatae eaque nulla quidem praesentium neque molestiae dolores, maxime quo. Doloremque ipsum sint doloribus repellat illum ipsam qui nihil corrupti! Nostrum illum sequi mollitia facilis odit quod itaque. Similique debitis ipsum sunt illo a placeat corporis, assumenda iusto fuga asperiores nobis iure, eligendi recusandae perferendis optio minima.</p>
-            </div>
-            <div class="column">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit pariatur sint praesentium ullam! Eum repellendus dolore excepturi nesciunt deleniti consectetur ea corrupti repudiandae maiores cumque. Iusto cumque necessitatibus voluptas, laudantium fugit, laboriosam quisquam in accusamus nihil ea similique quia obcaecati eos reiciendis impedit harum tempora, nemo eveniet sed dolore expedita? Dolore, cum mollitia temporibus nostrum aliquid libero eius reprehenderit praesentium consectetur explicabo in eaque! Ad architecto tenetur delectus enim est, sed consectetur fuga laudantium sequi labore, natus eaque! Illum blanditiis velit dolorem numquam dignissimos nulla labore sit ab ut.</p>
-            </div>
-            <div class="column">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque autem numquam magni quam reiciendis, doloribus officiis, quaerat blanditiis nobis, iusto illo magnam aperiam perspiciatis corrupti non commodi eos architecto culpa perferendis repellat? Necessitatibus, quaerat repellat. Rem, minima totam? Hic, unde enim asperiores ducimus consequuntur mollitia vero dolore illo laudantium deserunt tenetur non similique possimus omnis labore expedita temporibus a accusamus odio ab modi. Earum laborum omnis minima laudantium, recusandae quasi deserunt architecto quod rem delectus nostrum nulla impedit expedita obcaecati maxime necessitatibus quas voluptate neque nobis perspiciatis odio saepe voluptatum?</p>
-            </div>
-          </div>
-
+      <div class="row">
+        <div class="col-sm-6" style="background-color: yellow;">
+          <img class="imagem-grande" src="https://picsum.photos/800/900" alt="">
+        </div>
+        <div class="col-sm-6" style="background-color: #8fff00;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non officia tenetur odit repudiandae tempora ad! Libero laboriosam voluptatum ex officiis tempora nostrum, eum consequatur sunt aperiam in rerum corrupti alias. Quos consequuntur labore perspiciatis aut pariatur molestiae vel quo quod aliquam, ab ad dignissimos libero eligendi unde, rem asperiores. Molestiae asperiores, ut quibusdam deserunt eveniet commodi, cumque sapiente ducimus consequuntur quia odio. Ratione magni, itaque, iusto nulla possimus numquam quidem ex expedita modi sit dignissimos provident libero officiis ullam ducimus tempora, perspiciatis animi id nobis ad? Temporibus, impedit ab? Non, dolor maiores dolorum sed dolores vero architecto quia veritatis aliquid, eveniet dolorem doloribus vel commodi doloremque placeat porro itaque saepe illo incidunt debitis nostrum! Nesciunt, asperiores repudiandae deleniti veniam dolore qui sunt ducimus. A similique, necessitatibus deleniti debitis asperiores saepe odit cum commodi repellendus tempora corrupti! Nesciunt maxime reprehenderit maiores quibusdam. Aut ipsum enim explicabo rem provident autem fugit quo, quidem earum dignissimos fuga eius. Ullam veritatis perferendis, minus, itaque possimus necessitatibus eveniet recusandae sed porro iure voluptatem exercitationem ipsa, ratione reiciendis? Optio, saepe! Ducimus iure consectetur sint doloremque qui laudantium sequi porro omnis, expedita in ipsa ab vero molestias iusto quae fuga debitis aliquam totam aspernatur deserunt, soluta officia. Fugit mollitia possimus necessitatibus illum harum unde, beatae autem, cum quia deserunt atque a cumque itaque consequuntur inventore, corporis nam error ex? Nobis incidunt, deserunt quas ea molestias odio impedit itaque eos reprehenderit, autem voluptatibus quia consequatur debitis ab ratione? Suscipit ad tempore corporis perferendis tenetur esse impedit tempora, eveniet veritatis velit id doloremque odit, dicta quibusdam qui natus excepturi. Possimus, autem. Tempore dicta est deserunt, eum ipsum dolorem, porro aliquid aperiam sint deleniti, nihil animi sit impedit nobis maxime aspernatur iure autem. Sapiente quisquam deserunt consequatur, perspiciatis neque doloremque! Voluptates quo in eaque dicta minus, fugiat eius ad.
+        </div>
+      </div>
 
     </section>
 
     
-    <section class="carrosel">
+    <section class="carrosel" style="margin-top: 100px;">
 
-        <figure>
-            <img class="carrosel-img" src="https://picsum.photos/1460/900" alt="foto aleatoria" max-width="1460" max-height="900">
-        </figure>
+
 
     </section>
 
-    <section class="conteiner">
+    <section class="conteiner" data-aos="fade-up">
 
-        <div><img class="imagem-grande" src="https://picsum.photos/800/900" alt=""></div>
+      <div class="row">
+        <div class="col-sm-6" style="background-color: yellow;">
+          <!-- <img class="imagem-grande" src="https://picsum.photos/800/900" alt=""> -->
+          <div style="width: 74vh; height: 100%; display: flex; align-items: center; justify-content: center;">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="imgs/bufalo-1-1280x720.jpg" class="d-block w-100" style="width:100%; height: 90vh;  filter: grayscale(1); ">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="imgs/img1.jfif" class="d-block w-100" style="width:100%; height: 90vh;  filter: grayscale(1); ">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/img2.jfif" class="d-block w-100" style="width:100%; height: 90vh;  filter: grayscale(1); ">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-6" style="background-color: #8fff00;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non officia tenetur odit repudiandae tempora ad! Libero laboriosam voluptatum ex officiis tempora nostrum, eum consequatur sunt aperiam in rerum corrupti alias. Quos consequuntur labore perspiciatis aut pariatur molestiae vel quo quod aliquam, ab ad dignissimos libero eligendi unde, rem asperiores. Molestiae asperiores, ut quibusdam deserunt eveniet commodi, cumque sapiente ducimus consequuntur quia odio. Ratione magni, itaque, iusto nulla possimus numquam quidem ex expedita modi sit dignissimos provident libero officiis ullam ducimus tempora, perspiciatis animi id nobis ad? Temporibus, impedit ab? Non, dolor maiores dolorum sed dolores vero architecto quia veritatis aliquid, eveniet dolorem doloribus vel commodi doloremque placeat porro itaque saepe illo incidunt debitis nostrum! Nesciunt, asperiores repudiandae deleniti veniam dolore qui sunt ducimus. A similique, necessitatibus deleniti debitis asperiores saepe odit cum commodi repellendus tempora corrupti! Nesciunt maxime reprehenderit maiores quibusdam. Aut ipsum enim explicabo rem provident autem fugit quo, quidem earum dignissimos fuga eius. Ullam veritatis perferendis, minus, itaque possimus necessitatibus eveniet recusandae sed porro iure voluptatem exercitationem ipsa, ratione reiciendis? Optio, saepe! Ducimus iure consectetur sint doloremque qui laudantium sequi porro omnis, expedita in ipsa ab vero molestias iusto quae fuga debitis aliquam totam aspernatur deserunt, soluta officia. Fugit mollitia possimus necessitatibus illum harum unde, beatae autem, cum quia deserunt atque a cumque itaque consequuntur inventore, corporis nam error ex? Nobis incidunt, deserunt quas ea molestias odio impedit itaque eos reprehenderit, autem voluptatibus quia consequatur debitis ab ratione? Suscipit ad tempore corporis perferendis tenetur esse impedit tempora, eveniet veritatis velit id doloremque odit, dicta quibusdam qui natus excepturi. Possimus, autem. Tempore dicta est deserunt, eum ipsum dolorem, porro aliquid aperiam sint deleniti, nihil animi sit impedit nobis maxime aspernatur iure autem. Sapiente quisquam deserunt consequatur, perspiciatis neque doloremque! Voluptates quo in eaque dicta minus, fugiat eius ad.
+        </div>
+      </div>
 
-        <div class="columns">
-            <div class="column">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quod ipsum. Laborum itaque et, quisquam quis corporis dicta minus, quia beatae repudiandae qui ullam hic quidem atque eveniet voluptas cupiditate, reiciendis temporibus eligendi. Rerum, nostrum delectus! Ipsam pariatur nesciunt eius a possimus earum beatae eaque nulla quidem praesentium neque molestiae dolores, maxime quo. Doloremque ipsum sint doloribus repellat illum ipsam qui nihil corrupti! Nostrum illum sequi mollitia facilis odit quod itaque. Similique debitis ipsum sunt illo a placeat corporis, assumenda iusto fuga asperiores nobis iure, eligendi recusandae perferendis optio minima.</p>
-            </div>
-            <div class="column">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit pariatur sint praesentium ullam! Eum repellendus dolore excepturi nesciunt deleniti consectetur ea corrupti repudiandae maiores cumque. Iusto cumque necessitatibus voluptas, laudantium fugit, laboriosam quisquam in accusamus nihil ea similique quia obcaecati eos reiciendis impedit harum tempora, nemo eveniet sed dolore expedita? Dolore, cum mollitia temporibus nostrum aliquid libero eius reprehenderit praesentium consectetur explicabo in eaque! Ad architecto tenetur delectus enim est, sed consectetur fuga laudantium sequi labore, natus eaque! Illum blanditiis velit dolorem numquam dignissimos nulla labore sit ab ut.</p>
-            </div>
-            <div class="column">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque autem numquam magni quam reiciendis, doloribus officiis, quaerat blanditiis nobis, iusto illo magnam aperiam perspiciatis corrupti non commodi eos architecto culpa perferendis repellat? Necessitatibus, quaerat repellat. Rem, minima totam? Hic, unde enim asperiores ducimus consequuntur mollitia vero dolore illo laudantium deserunt tenetur non similique possimus omnis labore expedita temporibus a accusamus odio ab modi. Earum laborum omnis minima laudantium, recusandae quasi deserunt architecto quod rem delectus nostrum nulla impedit expedita obcaecati maxime necessitatibus quas voluptate neque nobis perspiciatis odio saepe voluptatum?</p>
-            </div>
-          </div>
-        </section>
+    </section>
 
-        <section class="equipe-desenvolvedores">
+        <section class="equipe-desenvolvedores" data-aos="fade-up">
 
             <h1 class="equipe-titulo">Desenvolvedores</h1>
     
-            <div class="container-fluid mt-3">
-                <div class="row">
-                 <div class="col-sm-1 p-3 text-white"></div>
+            <div class="container-fluid mt-2">
+                <div class="row" style="align-items: center;" >
                  <div class="col p-3 text-black">
-                   <div class="card" style="width:300px;">
-                     <img class="card-img-top" src="imgs/integrantes/vinicius.png" alt="Card image" style="width:100%">
+                   <div class="card" style="width:320px; background-color: var(--preto); margin-left: 15px; border-radius: 80px; border-width: 5px; border-color: #8fff00; margin: auto; display: flex; align-items: center; justify-content: center; padding-top: 15px;">
+                     <img class="card-img-top" src="imgs/integrantes/vinicius.png" alt="Card image" style="width: 285px; border-radius: 100%; ">
                      <div class="card-body" style="text-align: center;">
-                        <p class="textgerals" style="text-align: center;">Vinicius Souza Ramos</p>
-                       <p class="textgerals" style="text-align: center;">
-                        <i class="fa-solid fa-code"></i>  Desenvolvedor Back-End<br>
-                        <i class="fa-solid fa-mobile-button"></i> Desenvolvedor Mobile<br>
-                        <i class="fa-solid fa-database"></i> Desenvolvedor do C#</p>
+                        <p class="cardname" style="text-align: center; color: #fff;">Vinícius Souza</p>
+                        <p class="textgerals" style="text-align: center; color: #fff;"> <i class="fa-solid fa-bars"></i> Desenvolvedor WEB<br></p>
                        <a href="https://www.linkedin.com/in/vinisouza05/" class="btn"  style="background-color: #98FB98; border: #98FB98;"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
                      </div>
                    </div>
                  </div>
              
+
+                 <div class="col p-3 text-black">
+                  <div class="card" style="width:320px; background-color: var(--preto); margin-left: 15px; border-radius: 80px; border-width: 5px; border-color: #8fff00; margin: auto; display: flex; align-items: center; justify-content: center; padding-top: 15px;">
+                    <img class="card-img-top" src="imgs/integrantes/vinicius.png" alt="Card image" style="width: 285px; border-radius: 100%; ">
+                      <div class="card-body" style="text-align: center;">
+                         <p class="cardname" style="text-align: center; color: #fff;">João Pedro Barreto</p>
+                        <p class="textgerals" style="text-align: center; color: #fff;"> <i class="fa-solid fa-bars"></i> Desenvolvedor WEB<br></p>
+                        <a href="https://www.linkedin.com/in/vinisouza05/" class="btn"  style="background-color: #98FB98; border: #98FB98;"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col p-3 text-black">
+                    <div class="card" style="width:320px; background-color: var(--preto); margin-left: 15px; border-radius: 80px; border-width: 5px; border-color: #8fff00; margin: auto; display: flex; align-items: center; justify-content: center; padding-top: 15px;">
+                      <img class="card-img-top" src="imgs/integrantes/vinicius.png" alt="Card image" style="width: 285px; border-radius: 100%; ">
+                      <div class="card-body" style="text-align: center;">
+                         <p class="cardname" style="text-align: center; color: #fff;">João Pedro Lima</p>
+                         <p class="textgerals" style="text-align: center; color: #fff;"> <i class="fa-solid fa-bars"></i> Desenvolvedor UX/UI<br></p>
+                        <a href="https://www.linkedin.com/in/vinisouza05/" class="btn"  style="background-color: #98FB98; border: #98FB98;"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col p-3 text-black">
+                    <div class="card" style="width:320px; background-color: var(--preto); margin-left: 15px; border-radius: 80px; border-width: 5px; border-color: #8fff00; margin: auto; display: flex; align-items: center; justify-content: center; padding-top: 15px;">
+                      <img class="card-img-top" src="imgs/integrantes/vinicius.png" alt="Card image" style="width: 285px; border-radius: 100%; ">
+                      <div class="card-body" style="text-align: center;">
+                         <p class="cardname" style="text-align: center; color: #fff;">Victor Rodrigues</p>
+                         <p class="textgerals" style="text-align: center; color: #fff;"> <i class="fa-solid fa-bars"></i> Desenvolvedor UX/UI<br></p>
+                        <a href="https://www.linkedin.com/in/vinisouza05/" class="btn"  style="background-color: #98FB98; border: #98FB98;"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                      </div>
+                    </div>
+                  </div>
                </div>
              </div>
+
+             
+             
 
              
     
@@ -154,10 +231,13 @@
             &copy; 2023 CyberLiveStock; Designed by CyberLiveStock
         </div>
     </footer>
+  </main>
 
-
-    </footer>
-
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+    AOS.init({
+      duration: 1000,
+    });
+   </script>
 </body>
 </html>

@@ -16,7 +16,6 @@ body{
 }
 
 .cabecalho-titulo{
-    width:  660px;
     height: 60px;
     font-size: 64px;
     color: var(--branco);
@@ -53,11 +52,12 @@ body{
 }
 
 .carrosel{ 
-    width: 1460px;
-    height: 900px;
+    width: "100%";
+    height: 840px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 80px;
+    background-color: yellow;
 }
 
 
@@ -80,21 +80,21 @@ body{
     width: 1460px;
     height: 900px;
     margin: auto;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    
+    margin-top: 0px;
+    display: flex;    
 }
 
 .imagem-grande{
     border-radius: 40px;
-    margin-right: 18px; 
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .equipe-desenvolvedores{
     background-color: var(--preto);
-    width: 1460px;
-    height: 900px;
+    width: 1500px;
+    height: 750px;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 70px;
@@ -105,10 +105,14 @@ body{
     width:  260px;
     height: 60px;
     font-size: 40px;
-    color: var(--branco);
+    color: #8fff00;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Abnes';
 }
 
 .equipe-fotos{
@@ -232,8 +236,29 @@ footer{
     border-width: 2px;
 }
 
+.cardname{
+    font-size: 25px;
+    font-family: 'IBMPLEX-serif';
+    color: '#fff'
+}
+
 
 @font-face {
     font-family:'Abnes' ;
     src: url(../font/abnes/abnes.ttf);
-  }
+}
+
+@font-face {
+    font-family:'IBMPLEX-sans' ;
+    src: url(../font/ibmPlex_Sans/IBMPlexSans-Bold.ttf);
+}
+
+@font-face {
+    font-family:'IBMPLEX-serif' ;
+    src: url(../font/ibmPlex_Serif/IBMPlexSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family:'IBMPLEX-sansCondesed' ;
+    src: url(../font/ibmPlex_SansCondesed/IBMPlexSansCondensed-Bold.ttf);
+}
